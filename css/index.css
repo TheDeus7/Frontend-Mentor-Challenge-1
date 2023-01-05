@@ -1,0 +1,115 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.root{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: beige;
+}
+
+.container{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 3%;
+    display: flex;
+}
+
+.container_img{
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+    width: 250px;
+    height: 100%;
+}
+
+.container_text{
+    padding: 5%;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 5% 30% 20% 10% 15%;
+    row-gap: 5%;
+}
+
+.container_text-span{
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+.container_text-name{
+    margin-top: -2%;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.container_text-description{
+    font-size: 12px;
+    text-align: left;
+}
+.container_text-price{
+    margin-top: -2%;
+}
+.container_text-price p{
+    display: inline;
+    color: #20603D;
+    font-size:1.6rem;
+    font-weight: bold;
+}
+.container_text-price span{
+    color: black;
+    margin-left: 5%;
+    font-size: 0.7rem;
+    text-decoration-line: line-through;
+}
+.container_text-button{
+    color:white;
+    background-color: #20603D;
+    display: flex;
+    font-size: 0.8rem;
+    border: white;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.container_text-button img{
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 640px){
+    .container{
+        width: 300px;
+        height: 650px;
+        display: block;
+    }
+    .container_img{
+        width: 100%;
+        height: 40%;
+    }
+    .container_text{
+        row-gap: 10%;
+        padding: 7%;
+    }
+    .container_text-span{
+        font-size: 12px;
+    }
+    .container_text-name{
+        font-size: 1.6rem;
+    }
+    .container_text-description{
+        margin-top: -22px;
+        font-size: 1rem;
+        text-align: left;
+    }
+    .container_text-price p{
+        font-size:2.2rem;
+    }
+    .container_text-price span{
+        margin-left: 30px;
+        font-size: 1rem;
+    }
+    .container_text-button{
+        font-size: 1.5rem;
+        height: 50px;
+    }
+}
